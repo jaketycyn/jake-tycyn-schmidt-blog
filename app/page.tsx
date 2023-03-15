@@ -10,9 +10,9 @@ const HomePage = () => {
   ));
 
   return (
-    <div className="grid grid-cols-2 gap-10 mt-20 scrollbar-hide  ">
+    <div className="grid grid-cols-2 gap-10 mt-20 scrollbar-hide mb-20 ">
       {/* Headline Section */}
-      <div className="col-start-1 col-end-3 text-center text-6xl font-semibold">
+      <div className="col-start-1 col-end-3 text-center text-4xl lg:text-6xl font-semibold">
         <h1>I create applications</h1>
         <h1>using react, typescript </h1>
         <h1>psql and tailwindcss</h1>
@@ -23,8 +23,8 @@ const HomePage = () => {
         <div className="flex flex-row">
           <Image
             src={"/images/jaketycynschmidt_headshot.jpg"}
-            width="100"
-            height="100"
+            width="125"
+            height="125"
             alt="headshot"
             className="rounded-full hover:scale-115 border-orange-400 border-0 hover:border-2 decoration-orange-400"
           />
@@ -41,66 +41,69 @@ const HomePage = () => {
                 front-end Developer.
               </h1>
             </Link>
+            <p className="text-slate-400">located in sunny Santa Monica, CA</p>
           </div>
         </div>
       </div>
 
       {/* Link Section */}
-      <Link href={"/contact"}>
-        <div className=" w-96 h-48 bg-yellow-900/30 transition ease-in duration-200 hover:scale-105 shadow-xl rounded-lg ">
-          <div className="p-4 group">
-            <h2 className="text-2xl mb-2 font-semibold ml-4 group-hover:text-blue-400">
-              Contact
-            </h2>
-            <p className="text-md">
-              Need a passionate front-end designer? Have questions or want to
-              pass along a friend comment? Get in touch!
-            </p>
+      <div className="col-start-1 col-end-3 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-10">
+        <Link href={"/contact"}>
+          <div className="w-96 h-48 bg-yellow-900/30 transition ease-in duration-200 hover:scale-105 shadow-md hover:shadow-xl rounded-lg ">
+            <div className="p-4 group">
+              <h2 className="text-2xl mb-2 font-semibold ml-4 group-hover:text-blue-400">
+                Contact
+              </h2>
+              <p className="text-md text-zinc-700 font-semibold">
+                Need a passionate front-end designer? Have questions or want to
+                pass along a friend comment? Get in touch!
+              </p>
+            </div>
           </div>
-        </div>
-      </Link>
-      <Link href={"/work"}>
-        <div className=" w-96 h-48 bg-yellow-900/30 transition ease-in duration-200 hover:scale-105 shadow-xl rounded-lg ">
-          <div className="p-4 group">
-            <h2 className="text-2xl mb-2 font-semibold ml-4 group-hover:text-blue-400">
-              Work
-            </h2>
-            <p className="text-md">
-              Explore my coding projects and libraries showcasing my passion for
-              problem-solving. From web development to data analysis, discover
-              the tools and applications I&apos;ve created to simplify tasks and
-              boost efficiency.
-            </p>
+        </Link>
+        <Link href={"/work"}>
+          <div className=" w-96 h-48 bg-yellow-900/30 transition ease-in duration-200 hover:scale-105 shadow-md hover:shadow-xl rounded-lg ">
+            <div className="p-4 group">
+              <h2 className="text-2xl mb-2 font-semibold ml-4 group-hover:text-blue-400">
+                Work
+              </h2>
+              <p className="text-md text-zinc-700 font-semibold">
+                Explore my coding projects and libraries showcasing my passion
+                for problem-solving. From web development to data analysis,
+                discover the tools and applications I&apos;ve created to
+                simplify tasks and boost efficiency.
+              </p>
+            </div>
           </div>
-        </div>
-      </Link>
-      <Link href={"/blog"}>
-        <div className="  w-96 h-48 bg-yellow-900/30 transition ease-in duration-200 hover:scale-105 shadow-xl rounded-lg">
-          <div className="p-4 group">
-            <h2 className="text-2xl mb-2 font-semibold ml-4 group-hover:text-blue-400 ">
-              Blog
-            </h2>
-            <p className="text-md text-zinc-800 font-semibold">
-              View my journey of learning web development. I share my
-              experiences, successes, and failures along the way. Follow along
-              to gain insights and learn from my process.
-            </p>
+        </Link>
+        <Link href={"/blog"}>
+          <div className="  w-96 h-48 bg-yellow-900/30 transition ease-in duration-200 hover:scale-105 shadow-md hover:shadow-xl rounded-lg">
+            <div className="p-4 group">
+              <h2 className="text-2xl mb-2 font-semibold ml-4 group-hover:text-blue-400 ">
+                Blog
+              </h2>
+              <p className="text-md text-zinc-700 font-semibold">
+                View my journey of learning web development. I share my
+                experiences, successes, and failures along the way. Follow along
+                to gain insights and learn from my process.
+              </p>
+            </div>
           </div>
-        </div>
-      </Link>
-      <Link href={"/photography"}>
-        <div className="  w-96 h-48 bg-yellow-900/30 transition ease-in duration-200 hover:scale-105 shadow-xl rounded-lg">
-          <div className="p-4 group">
-            <h2 className="text-2xl mb-2 font-semibold ml-4 group-hover:text-blue-400">
-              Photography
-            </h2>
-            <p className="text-md text-zinc-800 font-semibold">
-              Photography provides me with immense mental, physical and
-              spiritual satisfaction. Check out some of my work.
-            </p>
+        </Link>
+        <Link href={"/photography"}>
+          <div className="  w-96 h-48 bg-yellow-900/30 transition ease-in duration-200 hover:scale-105 shadow-md hover:shadow-xl rounded-lg">
+            <div className="p-4 group">
+              <h2 className="text-2xl mb-2 font-semibold ml-4 group-hover:text-blue-400">
+                Photography
+              </h2>
+              <p className="text-md text-zinc-800 font-semibold">
+                Photography provides me with immense mental, physical and
+                spiritual satisfaction. Check out some of my work.
+              </p>
+            </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+      </div>
     </div>
   );
 };
