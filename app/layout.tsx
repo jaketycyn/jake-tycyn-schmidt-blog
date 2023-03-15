@@ -13,24 +13,24 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div className="bg-slate-800 h-14  flex flex-row justify-end ">
-        <div className="text-slate-300">
+      <div className="flex flex-row justify-end  ">
+        <div className="text-slate-800">
           <Link href="/">
-            <h1 className="flex text-2xl items-center  my-auto h-full">
+            <h1 className="flex text-2xl items-center  my-auto h-full mr-4">
               Jake TyCyn Schmidt
             </h1>
           </Link>
           <nav className="flex flex-col text-black  bg-pink-300 absolute right-0 space-y-4 mr-6">
-            <Link href={"/1"}>
+            <Link href={"/work"}>
               <p>Work</p>
             </Link>
-            <Link href={"/2"}>
+            <Link href={"/blog"}>
               <p>Blog</p>
             </Link>
-            {/* <Link href={"/3"}>
+            {/* <Link href={"/photography"}>
               <p>Photography</p>
             </Link> */}
-            <Link href={"/3"}>
+            <Link href={"/contact"}>
               <p>Contact</p>
             </Link>
           </nav>
@@ -43,9 +43,9 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body>
-        <div className=" border-slate-400">
+        <div className="flex flex-col w-full h-full min-h-screen  bg-yellow-400/10">
           {header}
-          <div className=" max-w-4xl mx-auto border">{children}</div>
+          <div className=" max-w-4xl mx-auto ">{children}</div>
         </div>
       </body>
     </html>

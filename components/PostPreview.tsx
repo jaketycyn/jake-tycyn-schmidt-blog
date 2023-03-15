@@ -3,7 +3,7 @@ import { PostMetadata } from "./PostMetadata";
 
 const PostPreview = (props: PostMetadata) => {
   return (
-    <div className="border border-slate-200 p-4 rounded-md shadow-md bg-white ">
+    <div className="p-4 rounded-md shadow-md bg-white ">
       <Link href={`/posts/${props.slug}`}>
         <h2 className="font-bold text-blue-800 hover:underline text-center">
           {props.title}
