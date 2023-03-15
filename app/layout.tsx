@@ -14,20 +14,23 @@ export default function RootLayout({
   const header = (
     <header>
       <div className="flex flex-row justify-end ">
-        <div className="text-slate-800">
+        <div className="text-slate-800 font-semibold">
           <Link href="/">
-            <h1 className="flex text-2xl items-center  my-auto h-full mr-4">
+            <p className="text-left -mb-3 text-sm scale-75 font-semibold">
+              my name is
+            </p>
+            <h1 className="flex text-2xl text-right text-neutral-600 my-auto h-full mr-2 hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75">
               Jake TyCyn Schmidt
             </h1>
           </Link>
-          <nav className="flex flex-col text-neutral-400 absolute right-0 space-y-2 mr-6 mt-2">
+          <nav className="flex flex-col text-neutral-400 absolute right-0 space-y-2 mr-2 mt-2">
             <Link href={"/work"}>
-              <p className="hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75">
+              <p className="hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75 text-right">
                 Work
               </p>
             </Link>
             <Link href={"/blog"}>
-              <p className="hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75">
+              <p className="hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75 text-right">
                 Blog
               </p>
             </Link>
@@ -35,7 +38,7 @@ export default function RootLayout({
               <p>Photography</p>
             </Link> */}
             <Link href={"/contact"}>
-              <p className="hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75">
+              <p className="hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75 text-right">
                 Contact
               </p>
             </Link>
