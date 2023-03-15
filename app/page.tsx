@@ -9,7 +9,7 @@ const HomePage = () => {
   ));
 
   return (
-    <div className="grid grid-cols-2 gap-10 mt-20 ">
+    <div className="grid grid-cols-2 gap-10 mt-20 scrollbar-hide  ">
       {/* Intro Section */}
       <div className="col-start-1 col-end-3 text-center text-6xl font-semibold">
         <h1 className="text-blue-900">Photographer</h1>

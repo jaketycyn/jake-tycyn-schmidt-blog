@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div className="flex flex-row justify-end  ">
+      <div className="flex flex-row justify-end ">
         <div className="text-slate-800">
           <Link href="/">
             <h1 className="flex text-2xl items-center  my-auto h-full mr-4">
