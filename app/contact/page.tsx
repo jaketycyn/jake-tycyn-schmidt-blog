@@ -28,10 +28,14 @@ const ContactPage = () => {
               className=" flex items-center justify-center"
             />
             <div className="">
-              <Link href="http://github.com/jaketycyn">
-                <p className="text-left font-semibold decoration-black hover:text-orange-400 hover:underline decoration-2 ease-in duration-100 ml-2">
+              <Link href="http://github.com/jaketycyn" legacyBehavior>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-left font-semibold decoration-black hover:text-orange-400 hover:underline decoration-2 ease-in duration-100 ml-2"
+                >
                   Github
-                </p>
+                </a>
               </Link>
             </div>
           </div>
@@ -44,10 +48,17 @@ const ContactPage = () => {
               className=" flex items-center justify-center"
             />
             <div className="">
-              <Link href="http://www.linkedin.com/in/jake-tycyn-schmidt-198334133/">
-                <p className="text-left font-semibold decoration-black hover:text-orange-400 hover:underline decoration-2 ease-in duration-100 ml-2">
+              <Link
+                href="http://www.linkedin.com/in/jake-tycyn-schmidt-198334133/"
+                legacyBehavior
+              >
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-left font-semibold decoration-black hover:text-orange-400 hover:underline decoration-2 ease-in duration-100 ml-2"
+                >
                   LinkedIn
-                </p>
+                </a>
               </Link>
             </div>
           </div>
