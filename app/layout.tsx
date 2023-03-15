@@ -20,18 +20,24 @@ export default function RootLayout({
               Jake TyCyn Schmidt
             </h1>
           </Link>
-          <nav className="flex flex-col text-black  bg-pink-300 absolute right-0 space-y-4 mr-6">
+          <nav className="flex flex-col text-neutral-400 absolute right-0 space-y-2 mr-6 mt-2">
             <Link href={"/work"}>
-              <p>Work</p>
+              <p className="hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75">
+                Work
+              </p>
             </Link>
             <Link href={"/blog"}>
-              <p>Blog</p>
+              <p className="hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75">
+                Blog
+              </p>
             </Link>
             {/* <Link href={"/photography"}>
               <p>Photography</p>
             </Link> */}
             <Link href={"/contact"}>
-              <p>Contact</p>
+              <p className="hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75">
+                Contact
+              </p>
             </Link>
           </nav>
         </div>
