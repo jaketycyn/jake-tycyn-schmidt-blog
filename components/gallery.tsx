@@ -60,12 +60,10 @@ const imageData = [
 
 const Gallery = () => {
   const [dimensions, setDimensions] = useState(null);
-
+  const [isLoading, setLoading] = useState(true);
   return (
     <div className="grid grid-cols-1 gap-4 mx-auto mt-4 sm:grid-cols-2 md:grid-cols-3 grid-auto-rows-20 auto-cols-auto">
       {imageData.map((item, index) => {
-        const [isLoading, setLoading] = useState(true);
-
         return (
           <a href="#" className="group" key={index}>
             <div className={`w-full overflow-hidden row-span-${item.rowSpan}`}>
