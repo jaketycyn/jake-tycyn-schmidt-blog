@@ -14,31 +14,33 @@ export default function RootLayout({
   const header = (
     <header>
       <div className="flex flex-row justify-end ">
-        <div className="text-slate-800 font-semibold">
+        <div className="font-semibold text-slate-800">
           <Link href="/">
-            <p className="text-left -mb-3 text-sm scale-75 font-semibold">
+            <p className="-mb-3 text-sm font-semibold text-left scale-75">
               my name is
             </p>
-            <h1 className="flex text-2xl text-right text-neutral-600 my-auto h-full mr-2 hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75">
+            <h1 className="flex h-full my-auto mr-2 text-2xl text-right transition ease-in-out delay-75 text-neutral-600 hover:underline hover:text-orange-400 decoration-black decoration-2">
               Jake TyCyn Schmidt
             </h1>
           </Link>
-          <nav className="flex flex-col text-neutral-400 absolute right-0 space-y-2 mr-2 mt-2">
+          <nav className="absolute right-0 flex flex-col mt-2 mr-2 space-y-2 text-neutral-400">
             <Link href={"/work"}>
-              <p className="hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75 text-right">
+              <p className="text-right transition ease-in-out delay-75 hover:underline hover:text-orange-400 decoration-black decoration-2">
                 Work
               </p>
             </Link>
             <Link href={"/blog"}>
-              <p className="hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75 text-right">
+              <p className="text-right transition ease-in-out delay-75 hover:underline hover:text-orange-400 decoration-black decoration-2">
                 Blog
               </p>
             </Link>
-            {/* <Link href={"/photography"}>
-              <p>Photography</p>
-            </Link> */}
+            <Link href={"/photography"}>
+              <p className="text-right transition ease-in-out delay-75 hover:underline hover:text-blue-400 decoration-black decoration-2">
+                Photography
+              </p>
+            </Link>
             <Link href={"/contact"}>
-              <p className="hover:underline hover:text-orange-400 decoration-black decoration-2 transition ease-in-out delay-75 text-right">
+              <p className="text-right transition ease-in-out delay-75 hover:underline hover:text-orange-400 decoration-black decoration-2">
                 Contact
               </p>
             </Link>
@@ -52,9 +54,9 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body>
-        <div className="flex flex-col w-full h-full min-h-screen  bg-yellow-400/10">
+        <div className="flex flex-col w-full h-full min-h-screen bg-yellow-400/10">
           {header}
-          <div className=" max-w-4xl mx-auto ">{children}</div>
+          <div className="mx-auto max-w-7xl ">{children}</div>
         </div>
       </body>
     </html>

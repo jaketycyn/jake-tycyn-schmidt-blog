@@ -1,5 +1,8 @@
+"use client";
+import Gallery from "@/components/gallery";
+
 const PhotographyPage = () => {
-  return <div className="grid grid-cols-1 gap-4 mt-20">Work Page</div>;
+  return <Gallery />;
 };
 
 export default PhotographyPage;

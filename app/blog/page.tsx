@@ -3,6 +3,8 @@ import PostPreview from "@/components/PostPreview";
 
 const BlogPage = () => {
   const postMetadata = getPostMetadata();
+
+  console.log("postMetadata: ", postMetadata);
   const postPreviews = postMetadata.map((post, index) => (
     <PostPreview key={post.slug} {...post} />
   ));
