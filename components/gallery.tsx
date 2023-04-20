@@ -31,7 +31,7 @@ const imageData = [
 
   {
     id: 3,
-    src: "/galleryImages/Kyrie-NightStalker-min.jpg",
+    src: "/galleryImages/Kyrie-NightStalker.jpg",
     rowSpan: 1,
   },
   {
