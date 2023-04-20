@@ -7,53 +7,72 @@ function cn(...classes: string[]) {
 
 const imageData = [
   {
-    id: 1,
-    src: "/galleryImages/Danielle-LaPiedra-04C-final-1200x1500.jpg",
+    id: 4,
+    src: "/galleryImages/Seattle-001-Edit.jpg",
     rowSpan: 1,
   },
+
   {
     id: 2,
-    src: "/galleryImages/2018-85MMTests-01-1080x864.jpg",
+    src: "/galleryImages/Hues_of_SM_Beach_Sunset.jpg",
+    rowSpan: 1,
+  },
+
+  {
+    id: 6,
+    src: "/galleryImages/SF_Oceanview.jpg",
     rowSpan: 1,
   },
   {
-    id: 3,
-    src: "/galleryImages/Kyrie-NightStalker-min.jpg",
+    id: 1,
+    src: "/galleryImages/Hues_of_SF_downtown_Sunset.jpg",
     rowSpan: 2,
   },
-  {
-    id: 4,
-    src: "/galleryImages/Seattle-001-Edit.jpg",
-    rowSpan: 1,
-  },
-  {
-    id: 6,
-    src: "/galleryImages/2018-85MMTests-01-1080x864.jpg",
-    rowSpan: 1,
-  },
-  {
-    id: 1,
-    src: "/galleryImages/Danielle-LaPiedra-04C-final-1200x1500.jpg",
-    rowSpan: 1,
-  },
-  {
-    id: 2,
-    src: "/galleryImages/2018-85MMTests-01-1080x864.jpg",
-    rowSpan: 1,
-  },
+
   {
     id: 3,
     src: "/galleryImages/Kyrie-NightStalker-min.jpg",
     rowSpan: 1,
   },
   {
-    id: 4,
-    src: "/galleryImages/Seattle-001-Edit.jpg",
+    id: 12,
+    src: "/galleryImages/Nightcall-Kyrie-03-insta-1200x1500.jpg",
+    rowSpan: 1,
+  },
+  {
+    id: 2,
+    src: "/galleryImages/Gurchit_004_Funk_1000x1500.jpg",
+    rowSpan: 1,
+  },
+  {
+    id: 2,
+    src: "/galleryImages/20170201_ReflectionsGurchit_01_1500x1000.jpg",
+    rowSpan: 1,
+  },
+  {
+    id: 6,
+    src: "/galleryImages/Nightcall-Kyrie-05-Glitchart-1500x1000.jpg",
     rowSpan: 1,
   },
   {
     id: 6,
     src: "/galleryImages/2018-85MMTests-01-1080x864.jpg",
+    rowSpan: 1,
+  },
+  {
+    id: 11,
+    src: "/galleryImages/Silhouette-of-a-Skater-New.jpg",
+    rowSpan: 1,
+  },
+  {
+    id: 12,
+    src: "/galleryImages/Footsteps.jpg",
+    rowSpan: 1,
+  },
+
+  {
+    id: 1,
+    src: "/galleryImages/Danielle-LaPiedra-04C-final-1200x1500.jpg",
     rowSpan: 1,
   },
 ];
