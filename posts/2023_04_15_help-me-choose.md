@@ -1,7 +1,7 @@
 ---
 title: "Picking the Perfect Path of Exile League Starter"
 subtitle: "Using a reddit meme post to create a web application"
-date: "2023-03-28"
+date: "2023-04-15"
 ---
 
 Application can be found <a href="https://helpmechooseleaguestart.vercel.app/" target="_blank">here</a> or by visiting my work page.
@@ -21,26 +21,8 @@ The flowchart format was definitely worth keeping, as it allows users to explore
 The initial plan was to simply provide links like those found in mega-threads on Reddit. However, after setting up the prototype, I thought, "Why not go all in?" and started searching for a library that would let me embed YouTube videos. I discovered
 <a href="https://www.npmjs.com/package/react-youtube" target="_blank">react-youtube</a> , a straightforward library that enables YouTube embeds and offers some customization options.
 
-The next step was to use a neat trick with Tailwind and Next.js to let users redirect to YouTube without leaving the app. For basic anchor tags or links, the settings allow redirection by opening a new tab in the user's browser.
+The next step was to use a neat trick with Tailwind and Next.js to let users redirect to YouTube without leaving the app. I go over how to enable links to create redirects in new tabs in this blog post <a href="/posts/2023_04_12_opening-links-in-new-tabs" target="_blank">here</a>
 
-```bash
-<a href="yourlink" target="_blank"/>
-```
+Due to this feature above I was able to attach a variety of resources to enhance users experience, such as embedded Youtube videos, links to official forum guides and external guide websites like Pohx's renowned <a href="https://www.pohx.net/" target="_blank">RighteousFire Wiki</a>). To provide additional support and drive traffic to the build creators, I've also included links to their YouTube channels.
 
-But this doesn't work if you're using Next.js' Link component. To make it work, you need to place the anchor tag within a Next.js Link and then assign the "legacyBehavior" attribute to the Link component.
-
-```bash
-import Link from "next/link";
-...
-<Link href={video.link} legacyBehavior>
-    <a
-    target="_blank"
-    rel="noopener noreferrer"
-    className=""
-    >
-        <p>
-        {video.title}
-        </p>
-    </a>
-</Link>
-```
+Feel free to share any suggestions or ideas for the Help-Me-Choose project. I intend to gradually expand this project over time and potentially incorporate a version of it into Poestack.
