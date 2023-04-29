@@ -72,7 +72,7 @@ export default function NavBar() {
             {/* Col 2 */}
             <Link
               href="/"
-              className="text-center text-white transition duration-500 hover:text-yellow-400 hover:scale-110"
+              className="col-start-2 text-lg font-bold text-center text-transparent transition duration-500 md:col-end-3 md:text-xl lg:text-2xl bg-clip-text bg-gradient-to-r from-pink-600 to-blue-600 hover:scale-105"
             >
               Jake TyCyn Schmidt
             </Link>
@@ -103,7 +103,7 @@ export default function NavBar() {
             {menuOptions.map((item) => (
               <div
                 key={item.name}
-                className="relative flex gap-6 p-3 -mx-3 text-sm leading-6 transition duration-500 rounded-lg group hover:bg-gray-200 sm:flex-col sm:p-6"
+                className="relative z-50 flex gap-6 p-3 -mx-3 text-sm leading-6 transition duration-500 rounded-lg group hover:bg-gray-200 sm:flex-col sm:p-6"
               >
                 <div className="flex items-center justify-center flex-none bg-gray-100 rounded-lg h-11 w-11 group-hover:bg-neutral-700 ">
                   <item.icon
